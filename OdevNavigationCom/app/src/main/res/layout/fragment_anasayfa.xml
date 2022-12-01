@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/AnasayfaRenk"
+    tools:context=".FragmentAnasayfa">
+
+    <Button
+        android:id="@+id/KayitOlButton"
+        android:layout_width="217dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/Grimsi"
+        android:hint="Kayıt ol"
+        android:textColor="@color/Beyaz"
+        android:textColorHint="@color/Beyaz"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/girisButon" />
+
+    <Button
+        android:id="@+id/girisButon"
+        android:layout_width="217dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/Grimsi"
+        android:hint="Giriş"
+        android:textColor="@color/Beyaz"
+        android:textColorHint="@color/Beyaz"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress3" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/email_text"
+        android:backgroundTint="@color/Beyaz"
+        android:ems="10"
+        android:hint=" Şifre"
+        android:inputType="textEmailAddress"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/girisButon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress2" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="26dp"
+        android:background="@drawable/email_text"
+        android:backgroundTint="@color/Beyaz"
+
+        android:ems="10"
+        android:hint=" E-mail"
+        android:inputType="textEmailAddress"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="203dp"
+        android:layout_height="235dp"
+        android:src="@drawable/pngkisi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
